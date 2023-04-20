@@ -45,17 +45,15 @@
 </details>
 
 <!-- Features -->
-
 ### Key Features <a name="key-features"></a>
 
-- **[Add Task]**
-- **[Highlight Task]**
-- **[Remove Task]**
+- **Add Task**
+- **Highlight Task**
+- **Remove Task**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
-
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://google.com)
@@ -63,7 +61,6 @@
 <p algn="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
-
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
@@ -93,11 +90,9 @@ Install this project with:
 
 To run the project, execute the following command:
 
-
 ```sh
   npm start
 ```
-
 ### Run tests
 
 To run tests, run the following command:
@@ -105,14 +100,10 @@ To run tests, run the following command:
 ```sh
   npm test
 ```
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
-
 ## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
 
 👤**Makungong Collins Tatang**
 
@@ -123,7 +114,6 @@ To run tests, run the following command:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
-
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **Edit and Update**
@@ -132,7 +122,6 @@ To run tests, run the following command:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
-
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
@@ -142,7 +131,6 @@ Feel free to check the [issues page](../../issues/).
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- SUPPORT -->
-
 ## ⭐️ Show your support <a name="support"></a>
 
 If you find this project intresting and helpful please leave a star.
@@ -150,18 +138,14 @@ If you find this project intresting and helpful please leave a star.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGEMENTS -->
-
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank the GOOGLE Search Engine team for making it posible to have all the avialable 
+I would like to thank the GOOGLE Search Engine team for making it posible to have all the avialable resource I needed. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FAQ (optional) -->
-
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
 
 - **The live link takes me some where else. Why?**
 
