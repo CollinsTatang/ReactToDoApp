@@ -1,12 +1,13 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Task.css';
 
-function Task() {
+function Task({ itemProp }) {
   return (
     <div className="task-container">
       <div className="task-container-background">
         <div className="task-term-container">
-          <h2 className="task-term">task</h2>
+          <h2 className="task-term">{itemProp.title}</h2>
         </div>
         <div className="buttons-container">
           <button type="submit" className="done-button">v</button>
@@ -16,4 +17,7 @@ function Task() {
     </div>
   );
 }
+Task.propTypes = {
+  itemProp: PropTypes.node.isRequired,
+};
 export default Task;
