@@ -31,10 +31,15 @@ function TasksLogic() {
       return todo;
     }));
   };
+  const deleteTodo = (id) => {
+    setTodos([
+      ...todos.filter((todo) => todo.id !== id),
+    ]);
+  };
   return (
     <div>
       <SubmitForm />
-      <TasksList todosProps={todos} handleChange={handleChange} />
+      <TasksList todosProps={todos} handleChange={handleChange} deleteTodo={deleteTodo} />
     </div>
   );
 }
