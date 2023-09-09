@@ -1,12 +1,13 @@
+import { useState } from 'react';
 import SubmitForm from './SubmitForm/SubmitForm';
 import TasksList from './TasksList/TasksList';
 
 function TasksLogic() {
-  const todos = [
+  const [todos, setTodos] = useState([
     {
       id: 1,
       title: 'Setup development environment',
-      completed: true,
+      completed: false,
     },
     {
       id: 2,
@@ -18,11 +19,22 @@ function TasksLogic() {
       title: 'Deploy to live server',
       completed: false,
     },
-  ];
+  ]);
+  const handleChange = (id) => {
+    setTodos((prevState) => prevState.map((todo) => {
+      if (todo.id === id) {
+        return {
+          ...todo,
+          completed: !todo.completed,
+        };
+      }
+      return todo;
+    }));
+  };
   return (
     <div>
       <SubmitForm />
-      <TasksList todosProps={todos} />
+      <TasksList todosProps={todos} handleChange={handleChange} />
     </div>
   );
 }

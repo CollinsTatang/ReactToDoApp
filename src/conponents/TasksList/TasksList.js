@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 import Task from '../Task/Task';
 import './TasksList.css';
 
-function TasksList({ todosProps }) {
+function TasksList({ todosProps, handleChange }) {
   return (
     <div className="tasks-list-container">
       <div className="tasks-list">
         {todosProps.map((todo) => (
-          <Task key={todo.id} itemProp={todo} />
+          <Task key={todo.id} itemProp={todo} handleChange={handleChange} />
         ))}
       </div>
     </div>
@@ -16,5 +16,6 @@ function TasksList({ todosProps }) {
 }
 TasksList.propTypes = {
   todosProps: PropTypes.node.isRequired,
+  handleChange: PropTypes.node.isRequired,
 };
 export default TasksList;
