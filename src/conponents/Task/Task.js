@@ -7,6 +7,7 @@ function Task({ itemProp }) {
     <div className="task-container">
       <div className="task-container-background">
         <div className="task-term-container">
+          <input type="checkbox" className="check-box" />
           <h2 className="task-term">{itemProp.title}</h2>
         </div>
         <div className="buttons-container">
