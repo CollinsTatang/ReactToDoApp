@@ -43,8 +43,8 @@
 .delete-button,
 .done-button {
   display: flex;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   background-color: rgb(97, 97, 97, 0.2);
   color: #454e53;
   border: none;
