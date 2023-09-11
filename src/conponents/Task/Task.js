@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FaTrash } from 'react-icons/fa';
 import './Task.css';
 
 function Task({ itemProp, handleChange, deleteTodo }) {
@@ -12,7 +13,9 @@ function Task({ itemProp, handleChange, deleteTodo }) {
         </div>
         <div className="buttons-container">
           <button type="submit" className="done-button">v</button>
-          <button type="submit" className="delete-button" onClick={() => deleteTodo(itemProp.id)}>x</button>
+          <button type="submit" className="delete-button" onClick={() => deleteTodo(itemProp.id)}>
+            <FaTrash />
+          </button>
         </div>
       </div>
     </div>
