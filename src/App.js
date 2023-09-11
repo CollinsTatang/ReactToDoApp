@@ -1,14 +1,13 @@
 import React from 'react';
 import './App.css';
-import SubmitForm from './conponents/SubmitForm/SubmitForm';
-import TasksList from './conponents/TasksList/TasksList';
+import Header from './conponents/Header/Header';
+import TasksLogic from './conponents/TasksLogic';
 
 function App() {
   return (
     <div className="App">
-      <h1>To Do App React</h1>
-      <SubmitForm />
-      <TasksList />
+      <Header />
+      <TasksLogic />
     </div>
   );
 }
