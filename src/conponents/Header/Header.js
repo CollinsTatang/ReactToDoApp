@@ -1,32 +1,23 @@
-import { useState } from 'react';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './Header.css';
 
 function Header() {
-  const [dropdown, setDropdown] = useState(false);
-  const headerStyle = {
-    padding: '20px 0',
-    lineHeight: '1.5em',
-    color: '#aeadad',
-    textAlign: 'center',
-  };
+  const links = [
+    { path: '/', text: 'Home' },
+    { path: 'about', text: 'About' },
+    { path: 'profile', text: 'Profile' },
+    { path: 'login', text: 'Login' },
+  ];
   return (
-    <header className={headerStyle}>
+    <header className="header">
       <nav>
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>
-            <button type="button" onClick={() => setDropdown(!dropdown)}>
-              Services
-              <span>&#8595;</span>
-            </button>
-            {dropdown && (
-            <ul>
-              <li>Design</li>
-              <li>Development</li>
-            </ul>
-            )}
-          </li>
+          {links.map((link) => (
+            <li key={link.text}>
+              <NavLink to={link.path}>{link.text}</NavLink>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>
