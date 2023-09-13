@@ -3,8 +3,10 @@ import Header from '../Header/Header';
 
 function About() {
   return (
-    <Header />,
-      <div>About Content</div>
+    <div>
+      <Header />
+      <p>About Content</p>
+    </div>
   );
 }
 export default About;

@@ -1,8 +1,12 @@
 import React from 'react';
+import Header from '../Header/Header';
 
 function Login() {
   return (
-    <div>Login Page</div>
+    <div>
+      <Header />
+      <p>Login Page</p>
+    </div>
   );
 }
 export default Login;
