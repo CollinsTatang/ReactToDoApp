@@ -1,14 +1,22 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
+import Home from './conponents/Home/Home';
+import About from './conponents/About/About';
+import Login from './conponents/Login/Login';
 import Header from './conponents/Header/Header';
-import TasksLogic from './conponents/TasksLogic';
+import Profile from './conponents/Profile/Profile';
+import NotFound from './conponents/NotFound/NotFound';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <TasksLogic />
-    </div>
+    <Routes path="/" element={<Header />}>
+      <Route index element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/profile" element={<Profile />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
   );
 }
 export default App;
